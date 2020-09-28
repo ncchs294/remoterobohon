@@ -115,8 +115,8 @@ $(function ()
                            removeLoading();
 	                   if(dt.message == 'success!')
 	                   {
-                               sendText(inputdata);//To LINE 送信
-	                       liff.closeWindow(); 
+                               //sendText(inputdata);//To LINE 送信
+	                       //liff.closeWindow(); 
 	                   }else
 	                   {
 		               window.alert("他の人が操作中です、少し待って再実行して下さい");  
