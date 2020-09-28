@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>ロボホンGOGO</title>
+  
+    <style type="text/css">    
+    body{
+         -webkit-text-size-adjust: 100%;
+         
+         }
+　 input,select,textarea{
+          background: #FFEEFF;
+         }
+    input,select,textarea,button,label{
+          font-size:45px;
+         }
+     h1{
+          text-align:center;
+          line-height:5px;
+       }
+     h2{
+          text-align:right;
+           line-height:5px;
+       }
+     input[type=radio] {
+       width: 50px;
+       height: 50px;
+       vertical-align: middle;
+       }
+        
+     #nowLoading {
+     display: table;
+     width: 100%;
+     height: 100%;
+     position: fixed;
+     top: 0;
+     left: 0;
+     background-color: #C0C0C0;
+     opacity: 0.8;
+     font-size: 100px;
+     color: #0000FF;
+     }
+ 
+    #innerMsg {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 50px;
+    z-index:50;
+    background: url("https://drive.google.com/uc?export=view&id=1kc5eGaHbaZTsTSe4G73djS-KCrh9JIXH&usp=sharing") center center no-repeat;
+    background-size:50% auto;
+    background-position: top;
+     
+    </style>
+</head>
+
+<body>
+    
+<h1>
+<font size="10" color="#666666">ロボホンGOGO!</font>
+</h1>
+<h2>
+<font size="5" color="#aaaaaa">RoBoHoN Contril for LIFF 0100 Edition</font>
+</h2>
+
+<div class="container">
+    
+    <form class="formmemo" id="myForm"onsubmit="myFormSubmit(this);">  
+        <div class="formmemo-group">
+            <label class="formmemo-label" for="input_customername">ロボホンに喋らせる1</label>
+           
+            <div class="formmemo-data">
+                <div style="margin-left:0%;margin-right:10%;">
+                <textarea name="speach1" cols="35" rows="10" id="input_speach1" placeholder="例：こんちは！僕、ロボホン！"></textarea>
+                </div>
+            </div>
+           
+        </div>
+       <br><br>
+        <div class="form-group">
+            <label class="formaction">アクションをする</label>
+            <div class="col-xs-9">
+                <select name="action" id="select_id1" class="selectpicker form-control" data-live-search="true" style="height:80px;width:920px;">
+                  <option selected></option>
+                  <option>1=顔上向き</option>
+                  <option>2=顔下向き</option>
+                  <option>3=顔右向き</option>
+                  <option>4=顔左向き</option>
+                  <option>5=右向き</option>
+                  <option>6=左向き</option>
+                  <option>7=右手挙げ</option>
+                  <option>8=左手挙げ</option>
+                  <option>9=両手挙げ</option>
+                  <option>10=歩き</option>
+                  <option>11=後ろ歩き</option>
+                  <option>12=右歩き</option>
+                  <option>13=左歩き</option>
+                  <option>14=腕立て</option>
+                  <option>15=ボール蹴り</option>
+                  <option>16=腹筋</option>
+                  <option>17=早歩き</option>
+                  <option>18=逆立ち</option>
+                  <option>19=立つ</option>
+                  <option>20=座る</option>
+                  <option>21=お出かけ姿勢終了</option>
+                  <option>22=写真ポーズ</option>
+                  <option>23=メロメロ </option>
+                  <option>24=青色の目</option>
+                  <option>25=緑色の目</option>
+                  <option>26=黄色の目</option>
+                  <option>27=赤色の目 </option>
+                  <option>28=水色の目</option>
+                  <option>29=ピンク色の目</option>   
+                  
+                </select>
+                <div class="help-block with-errors"></div>
+            </div>
+        </div>
+        <br><br>
+        <div class="form-group">
+            <label class="formaction">唄を歌う</label>
+            <div class="col-xs-9">
+                <select name="song" id="select_id2" class="selectpicker form-control" data-live-search="true" style="height:80px;width:920px;">
+                  <option selected></option>
+                  <option>1=こいのぼり</option>
+                  <option>2=七夕さま</option>
+                  <option>3=うさぎ</option>
+                  <option>4=ジングルベル</option>
+                  <option>5=一月一日</option>
+                  <option>6=ハッピーバースデー</option> 
+                  <option>7=蝶々</option>
+                  <option>8=かたつむり</option>
+                  <option>9=雨降り</option>
+                  <option>10=雪やこんこん</option>
+                  <option>11=鳩</option>
+                  <option>12=桃太郎</option>
+                  <option>13=もみじ</option> 
+                  <option>14=さくら</option>
+                  <option>15=月</option> 
+                  <option>16=かもめの水兵さん</option>
+                  <option>17=我は海の子</option> 
+                  <option>18=うさぎと亀</option>
+                  <option>19=どんぐりころころ</option>
+                  <option>20=ほたるこい</option>
+                  <option>21=シャボン玉</option>  
+                  <option>101=ご褒美の鼻歌</option>  
+                  <option>102=ご褒美のドレミの歌</option>
+                  <option>103=ご褒美のメリーさんの羊</option>
+                  <option>104=ご褒美のキラキラ星</option>    
+                </select>
+                <div class="help-block with-errors"></div>
+            </div>
+        </div>
+        <br><br>
+        <label class="formaction">ダンスを踊る</label>
+            <div class="col-xs-9">
+                <select name="dance" id="select_id3" class="selectpicker form-control" data-live-search="true" style="height:80px;width:920px;">
+                  <option selected></option>
+                  <option>1=アイネ・クライネ・ナハトムジーク</option>
+                  <option>2=大きな栗の木の下で</option>
+                  <option>3=阿波踊り</option>
+                  <option>4=エアギター</option>
+                  <option>5=糸巻の歌</option>
+                  <option>6=結んで開いて</option> 
+                  <option>7=げんこつ山の狸さん</option>
+                  <option>8=交響曲第９番</option>
+                  <option>9=ジングルベル</option>
+                  <option>10=カンフー</option>
+                  <option>11=80年代ディスコ</option>
+                  <option>12=さくら</option>
+                  <option>13=ミリタリーマーチ</option>
+                  <option>14=フラメンコ</option>
+                  <option>15=フラダンス</option>
+                  <option>16=野球応援</option> 
+                  <option>17=チェッコリ</option>
+                  <option>18=体遊びの歌</option>
+                  <option>19=和太鼓</option>
+                  <option>20=もろびとこぞりて</option>
+                  <option>21=歌舞伎</option>
+                  <option>22=くるみ割り人形</option>
+                  <option>23=ひな祭り</option>
+                  <option>24=ロボホン体操</option>
+                  <option>25=天国と地獄</option>
+                  <option>26=70年代ディスコ</option> 
+                  <option>27=我は海の子</option>
+                  <option>28=ロボホン音頭</option>
+                  <option>29=エアバイオリン</option>
+                  <option>30=タップダンス</option>
+                  <option>31=パラパラ</option>
+                  <option>32=おめでとうクリスマス</option>
+                  <option>33=うさぎのダンス</option>
+                  <option>34=コサックダンス</option>
+                  <option>35=子守唄</option>
+                  <option>36=チアリーディング</option> 
+                  <option>37=マーチングバンド</option>
+                  <option>38=森のくまさん</option>
+                  <option>39=ラジオ体操</option>
+                  <option>40=ロボホンズブートキャンプ</option>
+                  <option>41=ハカ</option>
+                  <option>42=ちゃんばらごっこ</option>
+                  <option>43=ヲタ芸</option>
+                  <option>44=きよしこの夜</option>
+                  <option>45=春の海</option>
+                  <option>46=白鳥の湖</option> 
+                  <option>47=タンゴ</option>
+                  <option>48=忍者のダンス</option>
+                  <option>49=インド舞踊</option>
+                  <option>50=ソウラン節</option>  
+                  <option>51=おべんとうばこのうた</option>
+                  <option>52=太極拳</option>
+                  <option>53=グーチョキパーでなにつくろう</option>    
+                </select>
+                <div class="help-block with-errors"></div>
+            </div>
+        </div>
+        <br><br>
+        <div class="formmemo-group">
+            <label class="formmemo-label" for="input_memo">ロボホンに喋らせる2</label>
+            <div class="formmemo-data">
+                <div style="margin-left:0%;margin-right:5%;">
+                <textarea name="speach2" cols="35" rows="10" id="input_speach2" placeholder="例：僕のダンスはどうだった？"></textarea>
+               </div>
+            </div>
+        </div>
+       
+         <br><br>
+        <div class="formmemo-group">
+                         <label class="formmemo-label">(ロボホンに喋らせる2)を翻訳</label>
+                        <br>
+                        <label class="radio-inline">
+                            <input type="radio"  name="category" id="input_category" value="日日" >翻訳なし
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio"  name="category" id="input_category" value="日英" >日本語→英語
+                        </label>
+                    
+                        <label class="radio-inline">
+                            <input type="radio" name="category" id="input_category" value="日中" >日本語→中国語
+                        </label>
+                       <br>
+                        <label class="radio-inline">
+                            <input type="radio" name="category" id="input_category" value="日韓" >日本語→韓国語
+                        </label>
+         </div>
+        <br><br>
+         <div class="formmemo-group">
+            <div class="formmemo-button">
+                 
+                 
+                 <div style="margin-left:10%;margin-right:10%;">
+                     <input type="submit" id="input_send" style="width:100%;padding:10px;font-size:100px;background-color:#008000;color:#FFFFFF" value="実行する" />
+                 </div>
+            </div>
+        </div>
+        
+        <br>
+    </form>
+  
+</div>
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script charset="utf-8" src="https://static.line-scdn.net/liff/edge/2.1/sdk.js"></script>
+    <script src="liff.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
