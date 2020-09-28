@@ -51,6 +51,13 @@ $(function ()
 	    
       var transrateList = element.category ;
       var transrate = transrateList.value ;
+	    
+　　　alert('speach1= ' + speach1);
+      alert('speach2=' + speach2);
+      alert('robohonaction= ' + robohonaction);
+      alert('robohonsong= ' + robohonsong);
+      alert('robohondance = ' + robohondance);
+      alert('transrate = ' + transrate);
       //入力チェック  
       if(speach1 === '')
       {
