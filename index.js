@@ -133,7 +133,7 @@ $(function ()
       //スピナー表示//
                  //インジケータ表示
                  // Loading 画像を表示
-                 //dispLoading("ロボホンに送信中...");
+                 dispLoading("ロボホンに送信中...");
                  var JSONdata = {
                                    nowdate:nowdate,
 	                           speach1:speach1,
@@ -149,7 +149,7 @@ $(function ()
                         {
 	                   //インジケータ除去
 	                   // Loading 画像を消す
-                           //removeLoading();
+                           removeLoading();
 	                   if(dt.message == 'success!')
 	                   {
                                //sendText(inputdata);//To LINE 送信
