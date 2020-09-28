@@ -8,6 +8,7 @@ $(document).ready(function () {
 })
 
 function initializeLiff(liffId) {
+    /*
     liff
         .init({
             liffId: liffId
@@ -22,6 +23,7 @@ function initializeLiff(liffId) {
         .catch((err) => {
             window.alert('LIFF Initialization failed ', err);
         });
+        */
 }
 
 function sendText(text) {
