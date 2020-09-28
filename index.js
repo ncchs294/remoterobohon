@@ -134,7 +134,15 @@ $(function ()
                  //インジケータ表示
                  // Loading 画像を表示
                  //dispLoading("ロボホンに送信中...");
-
+                 var JSONdata = {
+                                   nowdate:nowdate,
+	                           speach1:speach1,
+                                   action: actionindex,
+                                   song: songindex ,
+                                   dance: danceindex ,
+                                   speach2: speach2, 
+			           transrate: transrate
+                                 };
                  $.post(url,
                         JSONdata,
                         function(dt)
