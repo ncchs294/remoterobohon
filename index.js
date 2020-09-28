@@ -16,7 +16,7 @@ $(function ()
 	 speach2 = "nodata";     
       }
       
-      alert('Debug ');
+      //alert('Debug ');
 	    
 	    
       var element = document.getElementById( "myForm" ) ;
