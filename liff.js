@@ -8,7 +8,7 @@ $(document).ready(function () {
 })
 
 function initializeLiff(liffId) {
-    /*
+    
     liff
         .init({
             liffId: liffId
@@ -16,14 +16,14 @@ function initializeLiff(liffId) {
         .then(() => {
             // Webブラウザからアクセスされた場合は、LINEにログインする
             if (!liff.isInClient() && !liff.isLoggedIn()) {
-                window.alert("LINEアカウントにログインしてください。");
-                liff.login({redirectUri: location.href});
+                //window.alert("LINEアカウントにログインしてください。");
+               // liff.login({redirectUri: location.href});
             }
         })
         .catch((err) => {
             window.alert('LIFF Initialization failed ', err);
         });
-        */
+        
 }
 
 function sendText(text) {
