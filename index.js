@@ -86,6 +86,7 @@ $(function ()
      //GAS側Postイベントエントリ
       var url = 'https://script.google.com/macros/s/AKfycbyZCPemsZEO01buDDevsEWfs8LbvTIIJdGBHMyNi-HW9l9sK4E/exec'
       
+      /*
       liff.getProfile().then
       (profile => 
         {
@@ -126,6 +127,29 @@ $(function ()
      
         }
       );
+       */
+      //スピナー表示
+                 //インジケータ表示
+                 // Loading 画像を表示
+                 dispLoading("ロボホンに送信中...");
+
+                 $.post(url,
+                        JSONdata,
+                        function(dt)
+                        {
+	                   //インジケータ除去
+	                   // Loading 画像を消す
+                           removeLoading();
+	                   if(dt.message == 'success!')
+	                   {
+                               //sendText(inputdata);//To LINE 送信
+	                       //liff.closeWindow(); 
+	                   }else
+	                   {
+		               window.alert("他の人が操作中です、少し待って再実行して下さい");  
+                           }
+	                }
+                 );
       
       return false;
     });
