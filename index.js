@@ -52,16 +52,16 @@ $(function ()
       var transrateList = element.category ;
       var transrate = transrateList.value ;
 	    
-　　　alert('speach1= ' + speach1);
-      alert('speach2=' + speach2);
-      alert('robohonaction= ' + robohonaction);
-      alert('robohonsong= ' + robohonsong);
-      alert('robohondance = ' + robohondance);
-      alert('transrate = ' + transrate);
+　　　//alert('speach1= ' + speach1);
+      ///alert('speach2=' + speach2);
+      //alert('robohonaction= ' + robohonaction);
+      //alert('robohonsong= ' + robohonsong);
+      //alert('robohondance = ' + robohondance);
+      //alert('transrate = ' + transrate);
       //入力チェック  
-      if(speach1 === '')
+      if(speach1 === 'nodata')
       {
-         if(speach2 === '')
+         if(speach2 === 'nodata')
          {
            if(robohonaction === '')
            {
