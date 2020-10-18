@@ -93,8 +93,8 @@ $(function ()
 				datecurrent.getSeconds() + "秒";
         
      //GAS側Postイベントエントリ
-      //var url = 'https://script.google.com/macros/s/AKfycbyZCPemsZEO01buDDevsEWfs8LbvTIIJdGBHMyNi-HW9l9sK4E/exec'
-      var url = 'https://script.google.com/macros/s/AKfycby3tZhehcsDCLsngqFWpKil0gbXaUapzlLESzbgVXNvELXjxa8/exec'
+      var url = 'https://script.google.com/macros/s/AKfycbyZCPemsZEO01buDDevsEWfs8LbvTIIJdGBHMyNi-HW9l9sK4E/exec'
+      //var url = 'https://script.google.com/macros/s/AKfycby3tZhehcsDCLsngqFWpKil0gbXaUapzlLESzbgVXNvELXjxa8/exec'
       
       
       /*
