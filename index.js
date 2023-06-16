@@ -1,10 +1,8 @@
 $(function () 
 {
-    
     // 送信
     $('form').submit(function () 
     {
-      
       var speach1 = document.getElementById("input_speach1").value;
       var speach2 = document.getElementById("input_speach2").value;
       if(speach1 == '')
