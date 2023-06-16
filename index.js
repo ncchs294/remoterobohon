@@ -5,17 +5,14 @@ $(function ()
     {
       var speach1 = document.getElementById("input_speach1").value;
       var speach2 = document.getElementById("input_speach2").value;
-      if(speach1 == '')
-      {
+      if(speach1 == '')//ロボホンにしゃべらせる1 は、空？
+      {//Yes
 	 speach1 = "nodata";     
       }
-      if(speach2 == '')
-      {
+      if(speach2 == '')//ロボホンにしゃべらせる2 は、空？
+      {//Yes
 	 speach2 = "nodata";     
       }
-      
-      //alert('Debug ');
-	    
 	    
       var element = document.getElementById( "myForm" ) ;
       
@@ -50,12 +47,6 @@ $(function ()
       var transrateList = element.category ;
       var transrate = transrateList.value ;
 	    
-　　　//alert('speach1= ' + speach1);
-      ///alert('speach2=' + speach2);
-      //alert('robohonaction= ' + robohonaction);
-      //alert('robohonsong= ' + robohonsong);
-      //alert('robohondance = ' + robohondance);
-      //alert('transrate = ' + transrate);
       //入力チェック  
       if(speach1 === 'nodata')
       {
