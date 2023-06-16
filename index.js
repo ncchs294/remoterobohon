@@ -94,7 +94,7 @@ $(function ()
         
      //GAS側Postイベントエントリ
       //var url = 'https://script.google.com/macros/s/AKfycbyZCPemsZEO01buDDevsEWfs8LbvTIIJdGBHMyNi-HW9l9sK4E/exec'
-      var url = 'https://script.google.com/macros/s/AKfycby3tZhehcsDCLsngqFWpKil0gbXaUapzlLESzbgVXNvELXjxa8/exec'
+      var url = 'https://script.google.com/macros/s/AKfycby_RBfmE9dW_FWoD0KWf1f6JmeF07C54pUgQDAhcaeuRR-GlWgG9P3291ursspalxVa/exec';
       
       
       /*
