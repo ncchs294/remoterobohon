@@ -110,10 +110,11 @@ $(function ()
                          //sendText(inputdata);//To LINE 送信
 	                 //liff.closeWindow(); 
 	              }else
-	                  {
-		             window.alert("他の人が操作中です、少し待って再実行して下さい"); 
+	              {
+		        window.alert("他の人が操作中です、少し待って再実行して下さい"); 
 	              }
-                   );
+                   }
+      );
       return false;
     });
 });
