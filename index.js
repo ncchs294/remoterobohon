@@ -41,8 +41,8 @@ $(function ()
                  break;;
       }
       */
-      var robohonsong = songindex;
-      //var robohonsong = songselect.value;
+      //var robohonsong = songindex;
+      var robohonsong = songselect.value;
       var danceselect = element.dance;
       var danceindex = danceselect.selectedIndex		    
       var robohondance = danceselect.value;
