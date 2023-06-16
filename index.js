@@ -92,85 +92,39 @@ $(function ()
 				datecurrent.getMinutes() + "分" + 
 				datecurrent.getSeconds() + "秒";
         
-     //GAS側Postイベントエントリ
-      //var url = 'https://script.google.com/macros/s/AKfycbyZCPemsZEO01buDDevsEWfs8LbvTIIJdGBHMyNi-HW9l9sK4E/exec'
+      //GAS側Postイベントエントリ
+      //ncchs294@gmail.comのGAS ---> robohonrcontrolNC
       var url = 'https://script.google.com/macros/s/AKfycbwEIpJ7QPaQs49mxyUoA_K-O-F9y0ArOnKd92IuRfT4vAW_xr0pv0QIguZktEU_qgf5/exec';
 	         
-      
-      
-      /*
-      liff.getProfile().then
-      (profile => 
-        {
-                 // プロフィール名
-                 const name = profile.displayName
-                 var JSONdata = {
-                                   nowdate:nowdate,
-	                           speach1:speach1,
-                                   action: actionindex,
-                                   song: songindex ,
-                                   dance: danceindex ,
-                                   speach2: speach2, 
-			           transrate: transrate
-                                 };
-            
-                 //スピナー表示
-                 //インジケータ表示
-                 // Loading 画像を表示
-                 //dispLoading("ロボホンに送信中...");
-
-                 $.post(url,
-                        JSONdata,
-                        function(dt)
-                        {
-	                   //インジケータ除去
-	                   // Loading 画像を消す
-                           //removeLoading();
-	                   if(dt.message == 'success!')
-	                   {
-                               //sendText(inputdata);//To LINE 送信
-	                       //liff.closeWindow(); 
-	                   }else
-	                   {
-		               window.alert("他の人が操作中です、少し待って再実行して下さい");  
-                           }
-	                }
-                 );
-     
-        }
-      );
-       */
       //スピナー表示//
-                 //インジケータ表示
-                 // Loading 画像を表示
-                 dispLoading("ロボホンに送信中...");
-                 var JSONdata = {
-                                   nowdate:nowdate,
-	                           speach1:speach1,
-                                   action: actionindex,
-                                   song: songindex ,
-                                   dance: danceindex ,
-                                   speach2: speach2, 
-			           transrate: transrate
-                                 };
-                 $.post(url,
-                        JSONdata,
-                        function(dt)
-                        {
-	                   //インジケータ除去
-	                   // Loading 画像を消す
-                           removeLoading();
-	                   if(dt.message == 'success!')
-	                   {
-                               //sendText(inputdata);//To LINE 送信
-	                       //liff.closeWindow(); 
-	                   }else
-	                   {
-		               window.alert("他の人が操作中です、少し待って再実行して下さい");  
-                           }
-	                }
-                 );
-      
+      //インジケータ表示
+      // Loading 画像を表示
+      dispLoading("ロボホンに送信中...");
+      var JSONdata = {
+                       nowdate:nowdate,
+	               speach1:speach1,
+                       action: actionindex,
+                       song: songindex ,
+                       dance: danceindex ,
+                       speach2: speach2, 
+		       transrate: transrate
+                      };
+      $.post(url,
+             JSONdata,
+             function(dt)
+                  {
+	              //インジケータ除去
+	              // Loading 画像を消す
+                      removeLoading();
+	              if(dt.message == 'success!')
+	              {
+                         //sendText(inputdata);//To LINE 送信
+	                 //liff.closeWindow(); 
+	              }else
+	                  {
+		             window.alert("他の人が操作中です、少し待って再実行して下さい"); 
+	              }
+                   );
       return false;
     });
 });
