@@ -23,11 +23,10 @@ $(function ()
       var songselect = element.song;
       var songindex = songselect.selectedIndex;
       var robohonsong = 0;
-      if (songselect.value > 21)
+      
+      
+      switch (songselect.value)
       {
-          /*
-          switch (songindex)
-          {
             case 22:
                  songindex = 101;
                  break;
@@ -41,16 +40,11 @@ $(function ()
                  songindex = 104;
                  break;		      
             default:
+		 songindex = songselect.value;
                  break;;
-          }
-	  */
+      }
 	      
-	  robohonsong = songselect.value + 79;
-      }
-      else{
-          robohonsong = songselect.value;
-      }
-      //var robohonsong = songindex;
+      var robohonsong = songindex;
       //var robohonsong = songselect.value;
       var danceselect = element.dance;
       var danceindex = danceselect.selectedIndex		    
