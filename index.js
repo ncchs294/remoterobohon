@@ -23,9 +23,9 @@ $(function ()
       var songselect = element.song;
       var songindex = songselect.selectedIndex;
       var robohonsong = 0;
-      if (songindex > 21)
+      if (songselect.value > 21)
       {
-      
+          /*
           switch (songindex)
           {
             case 22:
@@ -43,7 +43,10 @@ $(function ()
             default:
                  break;;
           }
-	  robohonsong = songindex;
+	  */
+	      
+	  robohonsong = songselect.value + 79;
+      }
       else{
           robohonsong = songselect.value;
       }
