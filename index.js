@@ -47,7 +47,7 @@ $(function ()
       */
       var robohonsong = songselect.value;
       var danceselect = element.dance;
-      var danceindex = danceselect.selectedIndex		    
+      var danceindex = danceselect.selectedIndex;		    
       var robohondance = danceselect.value;
 	    
       var transrateList = element.category ;
