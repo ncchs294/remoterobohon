@@ -21,10 +21,9 @@ $(function ()
       //alert('ActionIndex ' + actionindex);
       var robohonaction = actionselect.value;
       var songselect = element.song;
-      var songindex = songselect.selectedIndex;
-      var robohonsong = 0;
+      //var songindex = songselect.selectedIndex;
       
-      
+      /*
       switch (songselect.value)
       {
             case 22:
@@ -45,7 +44,8 @@ $(function ()
       }
 	      
       var robohonsong = songindex;
-      //var robohonsong = songselect.value;
+      */
+      var robohonsong = songselect.value;
       var danceselect = element.dance;
       var danceindex = danceselect.selectedIndex		    
       var robohondance = danceselect.value;
