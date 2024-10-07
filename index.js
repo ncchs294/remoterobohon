@@ -22,6 +22,7 @@ $(function ()
       var robohonaction = actionselect.value;
       var songselect = element.song;
       var songindex = songselect.selectedIndex;
+      var robohonsong = 0;
       if (songindex > 21)
       {
       
@@ -42,9 +43,9 @@ $(function ()
             default:
                  break;;
           }
-	  var robohonsong = songindex;
+	  robohonsong = songindex;
       else{
-          var robohonsong = songselect.value;
+          robohonsong = songselect.value;
       }
       //var robohonsong = songindex;
       //var robohonsong = songselect.value;
