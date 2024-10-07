@@ -17,7 +17,7 @@ $(function ()
       var element = document.getElementById( "myForm" ) ;
       
       var actionselect = element.action;
-      var actionindex = actionselect.selectedIndex
+      var actionindex = actionselect.selectedIndex;
       //alert('ActionIndex ' + actionindex);
       var robohonaction = actionselect.value;
       var songselect = element.song;
