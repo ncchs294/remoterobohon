@@ -45,7 +45,7 @@ $(function ()
 	      
       var robohonsong = songindex;
       */
-      var robohonsong = songselect.value;
+      var robohonsong = songselect.selectedIndex;
       var danceselect = element.dance;
       var danceindex = danceselect.selectedIndex;		    
       var robohondance = danceselect.value;
