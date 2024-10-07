@@ -21,7 +21,7 @@ $(function ()
       //alert('ActionIndex ' + actionindex);
       var robohonaction = actionselect.value;
       var songselect = element.song;
-      //var songindex = songselect.selectedIndex;
+      var songindex = songselect.selectedIndex;
       
       /*
       switch (songselect.value)
